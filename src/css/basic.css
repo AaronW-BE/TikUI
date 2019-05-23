@@ -34,12 +34,12 @@
     display: block;
 }
 
-.btn:hover {
-    background-color: var(--grey-dark);
-}
+/*.btn:hover {*/
+/*    background-color: var(--grey-dark);*/
+/*}*/
 
 .btn:active {
-    background-color: var(--grey);
+    background-color: var(--grey-dark);
 }
 
 .btn.shadow {
@@ -49,23 +49,20 @@
 .btn-primary {
     background-color: var(--blue);
 }
-.btn-primary:hover {
-    background-color: var(--blue-dark);
-}
 
 .btn-primary:active {
-    background-color: var(--blue);
+    background-color: var(--blue-dark);
 }
 
 .btn-success {
     background-color: var(--green);
 }
 
-.btn-success:hover {
-    background-color: var(--green-dark);
-}
+/*.btn-success:hover {*/
+/*    background-color: var(--green-dark);*/
+/*}*/
 .btn-success:active {
-    background-color: var(--green);
+    background-color: var(--green-dark);
 }
 
 
