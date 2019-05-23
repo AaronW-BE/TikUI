@@ -1,0 +1,5 @@
+@import "color.css";
+
+.box {
+    background-color: var(--blue);
+}

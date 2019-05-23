@@ -1,0 +1,35 @@
+@import "color.css";
+.message-box {
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -200px;
+    z-index: 999;
+    width: fit-content;
+    background-color: var(--blue);
+    padding: 10px 20px;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 1s;
+    color: #ffffff;
+    box-shadow: 2px 2px 5px #eee;
+    opacity: 0.1;
+}
+
+.message-box.right {
+    left: 100%;
+    top: 20px;
+    margin: auto;
+}
+
+.message-box.right.show {
+    left: auto;
+    right: 20px;
+}
+
+.message-box.show {
+    top: 20px;
+    opacity: 1;
+}

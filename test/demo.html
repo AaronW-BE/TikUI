@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../src/css/basic.css">
+    <link rel="stylesheet" href="../src/css/message-box.css">
+</head>
+<body>
+    <div class="message-box">这是一个通知信息</div>
+    <div class="btn-group">
+        <div class="btn btn-success">成功</div>
+        <div class="btn btn-primary btn-inline">确认</div>
+        <div class="btn btn-inline">取消</div>
+        <div class="btn btn-primary" onclick="down()">显示</div>
+        <div class="btn btn-primary disable">显示</div>
+    </div>
+
+    <div class="btn-group">
+        <div class="btn btn-primary" onclick="showModal()">显示/关闭modal</div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-header">提示</div>
+            <div class="modal-content">这是一个modal</div>
+            <div class="modal-footer">
+                <div class="btn btn-success">确定</div>
+                <div class="btn" onclick="showModal()">取消</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let isShown = false;
+        function down() {
+            let box = document.getElementsByClassName('message-box');
+            if (isShown) {
+                box[0].classList.remove('show');
+            } else {
+                box[0].classList.add('show');
+            }
+            isShown = !isShown;
+        }
+
+        let isModalShown = false;
+        function showModal() {
+            let box = document.getElementsByClassName('modal');
+            if (isModalShown) {
+                box[0].classList.remove('show');
+            } else {
+                box[0].classList.add('show');
+            }
+            isModalShown = !isModalShown;
+        }
+    </script>
+</body>
+</html>
