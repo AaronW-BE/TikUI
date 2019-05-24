@@ -1,5 +1,9 @@
 @import "color.css";
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 *.disable, *.disable:hover {
     cursor: not-allowed !important;
     background: var(--grey) !important;
